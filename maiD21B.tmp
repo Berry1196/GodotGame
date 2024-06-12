@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq8h22jdgjomx"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_i8stt"]
+[ext_resource type="Script" path="res://CSGBox3D.gd" id="2_3xtli"]
+
+[node name="main" type="Node3D"]
+script = ExtResource("1_i8stt")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.60853)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+script = ExtResource("2_3xtli")
